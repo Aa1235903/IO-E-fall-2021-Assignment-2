@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PoseNet example using p5.js</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <style>
+		#lunbobox {
+			width: 500px;
+			height: 300px;
+			position: relative;
+			float: right;
+			text-align: center;
+    		font-size: 40px;
+			margin-right: 40px;
+		}
+
+		.lunbo {
+			width: 500px;
+			height: 300px;
+		}
+
+		.lunbo img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+
+		#toleft {
+			width: 30px;
+			height: 100px;
+			font-size: 40px;
+			line-height: 100px;
+			text-align: center;
+			position: absolute;
+			top: 90px;
+			left: 12px;
+			cursor: pointer;
+			z-index: 99;
+		}
+
+		#toright {
+			width: 30px;
+			height: 100px;
+			font-size: 40px;
+			line-height: 100px;
+			text-align: center;
+			position: absolute;
+			top: 90px;
+			right: 0px;
+			cursor: pointer;
+			z-index: 99;
+		}
+
+		.lunbo .list {
+			display: inline-block;
+			width: 500px;
+			height: 300px;
+			display: none;
+		}
+
+		.lunbo .list:nth-child(1) {
+			display: block;
+		}
+		
+  </style>
+</head>
+
+<body>
+  <h1>PoseNet example using p5.js</h1>
+  <p id='status'>Loading model...</p>
+  
+	<div id="lunbobox">
+		<div class="lunbo">
+			<div class="list"><img src="./images/1.jpg" /></div>
+			<div class="list"><img src="./images/2.jpg" /></div>
+			<div class="list"><img src="./images/3.jpg" /></div>
+		</div>
+		<span id="currentIndex">1</span>
+	</div>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="sketch2.js"></script>
+  <!-- <script src="sketch12.js"></script> -->
+     <!--<script src="sketch-headspace1.js"></script>-->
+    <!--<script src="Pnet.js"></script>-->
+    <!-- <script src="sketch-project3-1.js"></script> -->
+    
+</body>
+
+</html>
